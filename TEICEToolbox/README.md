@@ -7,3 +7,5 @@ TEI Checker (working title) addition to oXygen framework packages Marjorie Burgh
 The TEI Critical Edition Toolbox can help to check editions encoded in TEI with the parallel-segmentation method. If using a "positive" apparatus, listing all the readings of all the manuscripts in the @wit attributes of the <lem/> and/or <rdg/>, the application will be able to detect all apparatus entries that do not use all the witnesses listed in a <listWit/> in the header. 
 
 The part of the existing tool that dealt with downloading and transformation of the file (originally in php) has been rewritten as ANT transformation script and everything wrapped into an oXygen action to seamlessly work in oXygen environment.
+
+See the https://github.com/tuurma/oXygen/blob/master/TEICEToolbox/teicetoolbox.xml.pdf for the detailed description of the process.
