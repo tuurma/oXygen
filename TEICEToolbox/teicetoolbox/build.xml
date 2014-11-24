@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." default="trnsfrm" name="teicetoolbox">
+    <!--
+	This library is free software; you can redistribute it and/or
+	modify it under the terms of the GNU Lesser General Public
+	License as published by the Free Software Foundation; either
+	version 2.1 of the License, or (at your option) any later version.
+	
+	This library is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+	Lesser General Public License for more details.
+	
+	You should have received a copy of the GNU Lesser General Public
+	License along with this library; if not, write to the Free Software
+	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+	
+        Id: $Id$
+        Copyright: 2011, TEI Consortium<
+-->
+    <!--
+ Convert TEI documents into docx files.
+ -->
+    <!-- Path where the output will be saved. -->
+    <property name="outputDir" value=""/>
+    <!-- Path where the input file will be saved. -->
+    <property name="inputFile" value=""/>
+    <!-- Path where the output file will be saved. -->
+    <property name="outputFileName" value=""/>
+    <!-- where does oxygen keep stuff -->
+    <property name="oxygenlib" value=""/>
+    
+    
+    <target name="clean">
+            <delete dir="${outputDir}"/>
+    </target>
+    
+    <target name="trnsfrm" depends="clean">
+        <echo>Make transformation</echo>
+        <xslt style="content/custom.xsl" in="${inputFile}" out="${outputDir}/${outputFileName}">
+            <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+            <classpath location="${oxygenlib}/saxon9he.jar"/>
+        </xslt>
+        <copy todir="${outputDir}">
+            <fileset dir=".">
+                <include name="css/**"/>
+            </fileset>
+        </copy>
+        <copy todir="${outputDir}">
+            <fileset dir=".">
+                <include name="js/**"/>
+            </fileset>
+        </copy>
+    </target>
+    
+</project>

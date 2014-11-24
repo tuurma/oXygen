@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sample of the Corpus of Ioannes Dantiscus' Texts and Correspondence </title>
+            <respStmt>
+               <resp>compiled by</resp>
+               <name>Magdalena Turska</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="A1">fair copy in Latin, in secretary's hand, author's signature,
+                  BCz, 1601, p. 537-538</witness>
+               <witness xml:id="A2"> copy in Latin, 20th-century, B. PAU-PAN, 8245 (TK 7), f. 265 </witness>
+               <witness xml:id="B1"> fair copy in Latin, in secretary's hand, author's signature,
+                  BNW, BOZ, 953, f. 53</witness>
+               <witness xml:id="B2"> rough draft in Latin, in secretary's hand, BNW, BOZ, 2053, TG
+                  27, No. 3516, f. 175r</witness>
+               <witness xml:id="B3"> copy in Latin, 16th-century, BJ, 6557, f. 70v</witness>
+               <witness xml:id="B4"> copy in Latin, 16th-century, B. Ossol., 177/II, f.
+                  149v</witness>
+               <witness xml:id="B5"> copy in Latin, 16th-century, BK, 213, a.1524, No. 145, p.
+                  230-231</witness>
+               <witness xml:id="B6"> copy in Latin, 18th-century, BCz, 64 (TN), No. 94, p.
+                  259</witness>
+               <witness xml:id="B7"> copy in Latin, 18th-century, BCz, 274, No. 69, p. 80 </witness>
+               
+
+
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+   <text>
+      <group>
+
+         <text xml:id="L5823">
+            <!--
+    Letter #5823
+    Bona Sforza to Ioannes DANTISCUS
+    Cracow, 1524-04-29
+                received Naples, 1524-06-26
+    
+    Manuscript sources:
+    1	fair copy in Latin, in secretary's hand, author's signature, BCz, 1601, p. 537-538
+    2	copy in Latin, 20th-century, B. PAU-PAN, 8245 (TK 7), f. 265 
+    
+    -->
+            <!-- 
+    This is a letter from Bona Sforza, queen of Poland to Ioannes Dantiscus.
+    Text is divided in parts: address, salutation, main content of the letter, date and signature. Persons mentioned by name or description are tagged with name and rs respectively with attribute key providing the person number in our database.
+    Editorial corrections were made and tagged with corr and sic elements wrapped in choice.
+    Scribal corrections (overwriting of another ending over the first version) were tagged with subst containing del and add.
+    Primary (base) source for this letter is a fair copy that has dark stain making part of the text impossible to read and paper damages in the address, so these parts were supplied by the editor using supplied with the reason attribute.
+    -->
+
+            <front>
+               <div type="address">
+                  <p>
+                     <supplied reason="paper damaged">Magnifico</supplied> viro <name type="person"
+                        key="1">Ioanni Dantisco</name>, <supplied reason="paper damaged"
+                        >secretario</supplied> nostro dilecto </p>
+                  <p> Bari </p>
+               </div>
+            </front>
+
+            <body>
+               <div type="salutation">
+                  <p> Magnifice noster carissime etc. </p>
+               </div>
+
+               <div type="main_content">
+                  <p>
+                     <span type="incipit">Nonnulla tibi conferenda magnifico secretario nostro
+                        scripsimus</span>, quae ut intellexeris, habito invicem consilio,
+                     perficienda perficies eaque negotia, quae severitate indigebunt, severa
+                     exsequeris manu, quae vero placida et mit<choice>
+                        <corr/>
+                        <sic>t</sic>
+                     </choice>i <supplied reason="stain">indige</supplied>bunt fronte, illa benigne
+                     suscipies citiusque quam poteris <gap reason="stain"/> animum expedias
+                     negotiis, ut eo celerius <name type="place" key="614">Hispani<supplied
+                           reason="stain">iis</supplied></name>
+                     <supplied reason="stain">re</supplied>dire possis, quod maxime cupimus. Teque opera<choice>
+                        <corr/>
+                        <sic>n</sic>
+                     </choice>t<subst>
+                        <del>e</del>
+                        <add place="overwritten">urum</add>
+                     </subst> pro <supplied reason="stain">statu</supplied>s nostri tranquillitate
+                     apud <rs type="person" key="30">caesaream maiestatem</rs> diligenter audire
+                     exoptamus. Vale. </p>
+               </div>
+
+               <div type="datum">
+                  <p> Datum <name type="place" key="2">Cracoviae</name>, MDXXIIII die Aprilis XXIX.
+                  </p>
+               </div>
+
+               <div type="signature">
+                  <p>
+                     <name type="person" key="7">Bona</name> regina subscripsit </p>
+               </div>
+            </body>
+         </text>
+
+
+         <text xml:id="L193">
+            <!--
+    Letter #193
+    Bona Sforza & Sigismund I Jagiellon to Ioannes DANTISCUS
+    Cracow, 1524-08-08
+    
+    Manuscript sources:
+    1	fair copy in Latin, in secretary's hand, author's signature, BNW, BOZ, 953, f. 53
+    2	rough draft in Latin, in secretary's hand, BNW, BOZ, 2053, TG 27, No. 3516, f. 175r
+    3	copy in Latin, 16th-century, BJ, 6557, f. 70v
+    4	copy in Latin, 16th-century, B. Ossol., 177/II, f. 149v
+    5	copy in Latin, 16th-century, BK, 213, a.1524, No. 145, p. 230-231
+    6	copy in Latin, 18th-century, BCz, 64 (TN), No. 94, p. 259
+    7	copy in Latin, 18th-century, BCz, 274, No. 69, p. 80 
+    
+    -->
+
+            <!-- 
+    This is a letter fromSigismund Jagiellon, king of Poland and Bona Sforza, queen of Poland to Ioannes Dantiscus.
+    Text is divided in parts: address, salutation, main content of the letter, date and signature. Persons mentioned by name or description are tagged with name and rs respectively with attribute key providing the person number in our database.
+    Primary (base) source for this letter is fair copy that has big part of the page ripped out, so these parts were taken from the preserved rough draft and annotated as app entries with lem providing the preferred reading and rdg the alternative one.
+    Scribal corrections (e.g. change of the word ending) were tagged with subst containing del and add.
+    Multiple abbreviation expansion possibilities were given as lem and rdg within apparatus entry with expan ex marking the parts expanded. 
+    -->
+            <front>
+               <div type="address">
+                  <p> Nobili et egregio <name type="person" key="1">Ioanni Dantisco</name>
+                        sec<supplied reason="paper damaged">retario</supplied>
+                     <supplied reason="paper damaged">et</supplied> oratori nostro fideli
+                        dilec<supplied reason="paper damaged">to</supplied>
+                  </p>
+               </div>
+            </front>
+
+            <body>
+               <div type="signature">
+                  <p> Sigismundus et Bona Dei gratia <gap reason="paper damaged"/> magni duces
+                     Lituaniae, Russ<supplied reason="paper damaged">iae</supplied>
+                     <gap reason="paper damaged"/>
+                  </p>
+               </div>
+
+               <div type="salutation">
+                  <p> Nobilis et egregie fideli dilecte. </p>
+               </div>
+
+               <div type="main_content">
+                  <p> Postquam <!-- 
+    In this paragraph great part of the page is missing, so the preferred reading for the edition had to be taken from secondary witness (rough draft). This was tagged as apparatus entries with lem and rdg.
+    -->
+                     <app>
+                        <lem wit="2">intelleximus, quod <rs type="person" key="1214">vice<subst>
+                                 <del><gap reason="illegible"/></del>
+                                 <add place="superinscribed">rex</add>
+                              </subst> Neapolitanus</rs><subst>
+                              <del>accepit</del>
+                              <add place="superinscribed"> ademit</add>
+                           </subst> nobi</lem>
+                        <rdg wit="#B1"><gap reason="paper damaged"/></rdg>
+                     </app>s possessionem ducatus Barensis, <app>
+                        <lem wit="#B1">forte</lem>
+                        <rdg wit="#B2">fortasse</rdg>
+                     </app> ex man<app>
+                        <lem wit="#B2">dato et iussu <rs type="person" key="30">caesareae
+                              maiestatis</rs>, quamvis antea tibi commi</lem>
+                        <rdg wit="1"><gap reason="paper damaged"/></rdg>
+                     </app>simus, ut ires in <name type="place" key="614">Hispanias</name> ad suam
+                     maiestatem <app>
+                        <lem wit="1">hasque</lem>
+                        <rdg wit="2"><add place="on the margin" hand="other">et</add> has</rdg>
+                     </app> et a<app>
+                        <lem wit="2">lias res, quae statum ipsum nostrum Barensem c</lem>
+                        <rdg wit="1"><gap reason="paper damaged"/></rdg>
+                     </app>oncernunt, <app>
+                        <lem wit="1">sollicitares</lem>
+                        <rdg wit="2"><subst>
+                              <del>solitares</del>
+                              <add place="superinscribed"> sollicitares</add>
+                           </subst></rdg>
+                     </app>, attamen veriti, ne in itinere aliqua ti<app>
+                        <lem wit="2">bi supervenirent impedimenta, misim</lem>
+                        <rdg wit="1"><gap reason="paper damaged"/></rdg>
+                     </app>us eo et doctorem <name type="person" key="97">Stanislaum <app>
+                           <lem wit="1">Borgk</lem>
+                           <rdg wit="2">Borg</rdg>
+                        </app></name>
+                     <app>
+                        <lem wit="1">canonicum Cracoviensem et <gap reason="paper damaged"/></lem>
+                        <rdg wit="2">etc.</rdg>
+                     </app>, <app>
+                        <lem wit="2">ne res n</lem>
+                        <rdg wit="1"><gap reason="paper damaged"/></rdg>
+                     </app>ostrae in aliquo retardarentur. Mandamusque tibi, ut negotia nostra una <app>
+                        <lem wit="2">cum eo agas diligentiss</lem>
+                        <rdg wit="1"><gap reason="paper damaged"/></rdg>
+                     </app>ime et <app>
+                        <lem wit="1">cures</lem>
+                        <rdg wit="2">cur<subst>
+                              <del>a</del>
+                              <add place="superinscribed">e</add>
+                           </subst>s</rdg>
+                     </app>, ut omnia optato per vos fine terminentur, <app>
+                        <lem wit="1"/>
+                        <rdg wit="2"><del>ut</del></rdg>
+                     </app> et ut hac animi <app>
+                        <lem wit="2">molestia, qua ex tam</lem>
+                        <rdg wit="1"><gap reason="paper damaged"/></rdg>
+                     </app> insigni et manifesta iniuria affecti sumus, liberari tandem possimus. <app>
+                        <lem wit="1"/>
+                        <rdg wit="2">Facturus</rdg>
+                     </app> Pro fide <app>
+                        <lem wit="1">t<supplied reason="paper damaged">ua</supplied></lem>
+                        <rdg wit="2"/>
+                     </app>
+                     <app>
+                        <lem wit="2">et gratia n</lem>
+                        <rdg wit="1"><gap reason="paper damaged"/></rdg>
+                     </app>ostra <app>
+                        <lem wit="1">facturus.</lem>
+                        <rdg wit="2"/>
+                     </app>
+                  </p>
+               </div>
+
+               <div type="datum">
+                  <p>
+                     <!-- 
+    Here two levels of apparatus had to be combined as in the first witness there is an abbreviation that may be expanded in two ways, while in secondary source this part (date) is omitted completely 
+    -->
+                     <app>
+                        <lem wit="1">
+                           <app>
+                              <lem><expan>Dat<ex>ae</ex></expan></lem>
+                              <rdg><expan>Dat<ex>um</ex></expan></rdg>
+                           </app>
+                           <name type="place" key="2">Cracoviae</name>, octavo die Augusti anno
+                           Domini M-o D-o X<supplied reason="paper damaged">XIV r</supplied>egni
+                           nostri decimo octavo</lem>
+                        <rdg wit="2"/>
+                     </app>
+                  </p>
+               </div>
+
+               <div type="signature">
+                  <p>
+                     <app>
+                        <lem wit="1">
+                           <rs type="person" key="24">Sigismundus rex</rs> subscripsit <name
+                              type="person" key="7">Bona</name> regina subscripsit </lem>
+                        <rdg wit="2"/>
+                     </app>
+                  </p>
+               </div>
+
+            </body>
+         </text>
+
+      </group>
+   </text>
+</TEI>

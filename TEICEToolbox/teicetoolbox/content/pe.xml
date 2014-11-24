@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<TEI
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML"
+  xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>List of people</title>
+      </titleStmt>
+      <publicationStmt>
+          <p>          </p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This </p>
+      </sourceDesc>
+      
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>('Pe1':'Dantiscus';'Pe2':'Bona Regina Poloniae';'Pe3':'Sigismundus Rex';)</listPerson>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+    <text>
+      <body><p></p></body>
+  </text>
+</TEI>
